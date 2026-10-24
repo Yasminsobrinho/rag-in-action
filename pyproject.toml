@@ -1,0 +1,21 @@
+[project]
+name = "rag-in-action"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Yasmin Vitória da Silva Sobrinho", email = "ysobrinho79@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "chainlit>=2.12.0",
+    "llama-index>=0.14.25",
+    "python-dotenv>=1.2.4",
+]
+
+[project.scripts]
+rag-in-action = "rag_in_action:main"
+
+[build-system]
+requires = ["uv_build>=0.13.5,<0.14.0"]
+build-backend = "uv_build"
